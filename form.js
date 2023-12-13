@@ -42,6 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
     continueBtn.addEventListener('click', function() {
         
         // Substitua "URL DO PRÓXIMO PASSO" pela URL real do próximo passo
-        window.location.href = "URL DO PRÓXIMO PASSO";
+        window.location.href = "https://amor1devolta.netlify.app/";
     });
 });
