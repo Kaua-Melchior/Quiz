@@ -1,0 +1,90 @@
+@keyframes entering {
+  from { 
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('/Assets/bb.jpg');
+  background-size: cover;
+  background-position: top; /* Opcional: centraliza a imagem no meio */
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  font-size: 210%;
+  color: #ffffff;
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #f4f4f4;
+}
+
+.result {
+  text-align: center;
+  font-size: 400%;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  color: #ff0000;
+}
+
+.button {
+  font-size: 200%;
+  display: inline-block;
+  padding: 10px 70px;
+  background-color: #00ff15;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 180px;
+  transition: background-color 0.2s;
+  margin-bottom: 41px;
+}
+
+button:hover {
+  background-color: #ff1a1a; /* Vermelho */
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ff1a1a; /* Vermelho */
+}
